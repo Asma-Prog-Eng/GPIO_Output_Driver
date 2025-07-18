@@ -13,6 +13,8 @@ Bare metal implementation  of an GPIO output driver , with PLL clock configurati
 ### Software
 - STM32CubeIDE or compatible toolchain
 - Pulseview
+  <img width="1444" height="659" alt="image" src="https://github.com/user-attachments/assets/c2d4bd2f-52e4-4ceb-a01d-ebe89d574497" />
+
 ## Installation
 1. Clone this repository:
    ```bash
