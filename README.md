@@ -23,11 +23,15 @@ Bare metal implementation  of an GPIO output driver , with PLL clock configurati
 2. Import project into STM32CubeIDE:
 File → Import... → Existing Projects into Workspace
 
-3. Rebuild project dependencies
+3. Add required include directories path : Project Properties--> C/C++ General --> Include --> Add --> System Files (CMSIS--> Device--> Include, and CMSIS-->Include)
+
+4. Add #STM32F4 smybol ( Project Properties--> C/C++ General --> Symbols --> Add)
+
+5.Rebuild project dependencies
 
 ## Usage
-Initialization : GPIOA_Init() 
-Toggle led connected to PA1 : Led_toggle()
+- Initialization : GPIOA_Init() <br />
+- Toggle led connected to PA1 : Led_toggle()
 
 ## Project Structure
 
@@ -37,8 +41,8 @@ Toggle led connected to PA1 : Led_toggle()
 
 ## Troubleshooting
 
-No value could be read from on ADC1->DR:
-- Verify clock acess for GPIOA peripheral (RCC->APHBENR register)
+No value could be read from on ADC1->DR: <br />
+- Verify clock acess for GPIOA peripheral (RCC->APHBENR register) <br />
 - Verify PA5 mode, should be set as output (GPIOA->MODER register)
 
 ## Contributing
