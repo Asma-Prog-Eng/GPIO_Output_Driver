@@ -1,6 +1,6 @@
 Bare metal implementation  of an GPIO output driver , with PLL clock configuration ,for STM32 development board 
 ## Features
-- GPIOA initialization with peripheral clock = 100MHz.
+- GPIOA initialization with peripheral clock = 50MHz.
 - PLL clock configuration for GPIOA
 - Pin PA5 is configured as digital output
 ## Requirements
