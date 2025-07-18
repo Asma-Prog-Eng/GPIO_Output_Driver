@@ -1,5 +1,5 @@
 
-GPIO_Output_driver.elf:     file format elf32-littlearm
+GPIO_Output_Driver.elf:     file format elf32-littlearm
 
 Sections:
 Idx Name          Size      VMA       LMA       File off  Algn
