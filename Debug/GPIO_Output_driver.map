@@ -237,7 +237,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x16 ./Src/syscalls.o
  .debug_macro   0x00000000       0xce ./Src/syscalls.o
  .debug_line    0x00000000      0x8a7 ./Src/syscalls.o
- .debug_str     0x00000000     0x99ec ./Src/syscalls.o
+ .debug_str     0x00000000     0x99e8 ./Src/syscalls.o
  .comment       0x00000000       0x44 ./Src/syscalls.o
  .debug_frame   0x00000000      0x2ac ./Src/syscalls.o
  .ARM.attributes
@@ -302,7 +302,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x6a ./Src/sysmem.o
  .debug_macro   0x00000000      0x1df ./Src/sysmem.o
  .debug_line    0x00000000      0x583 ./Src/sysmem.o
- .debug_str     0x00000000     0x778a ./Src/sysmem.o
+ .debug_str     0x00000000     0x7786 ./Src/sysmem.o
  .comment       0x00000000       0x44 ./Src/sysmem.o
  .debug_frame   0x00000000       0x34 ./Src/sysmem.o
  .ARM.attributes
@@ -860,16 +860,16 @@ LOAD C:/ST/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
  .debug_macro   0x0000dc45       0x6d ./Src/ GPIOA_Output.o
  .debug_macro   0x0000dcb2       0xd8 ./Src/main.o
 
-.debug_line     0x00000000      0xb28
- .debug_line    0x00000000      0x59c ./Src/ GPIOA_Output.o
- .debug_line    0x0000059c      0x511 ./Src/main.o
- .debug_line    0x00000aad       0x7b ./Startup/startup_stm32f411vetx.o
+.debug_line     0x00000000      0xac6
+ .debug_line    0x00000000      0x56b ./Src/ GPIOA_Output.o
+ .debug_line    0x0000056b      0x4e0 ./Src/main.o
+ .debug_line    0x00000a4b       0x7b ./Startup/startup_stm32f411vetx.o
 
-.debug_str      0x00000000    0x4fef8
- .debug_str     0x00000000    0x4fef8 ./Src/ GPIOA_Output.o
-                              0x5000f (size before relaxing)
- .debug_str     0x0004fef8    0x4fdd8 ./Src/main.o
- .debug_str     0x0004fef8       0x7b ./Startup/startup_stm32f411vetx.o
+.debug_str      0x00000000    0x4fef4
+ .debug_str     0x00000000    0x4fef4 ./Src/ GPIOA_Output.o
+                              0x5000b (size before relaxing)
+ .debug_str     0x0004fef4    0x4fdd4 ./Src/main.o
+ .debug_str     0x0004fef4       0x77 ./Startup/startup_stm32f411vetx.o
 
 .comment        0x00000000       0x43
  .comment       0x00000000       0x43 ./Src/ GPIOA_Output.o
@@ -882,6 +882,6 @@ LOAD C:/ST/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
  .debug_frame   0x00000084       0x2c C:/ST/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.13.3.rel1.win32_1.0.0.202411081344/tools/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard\libc_nano.a(libc_a-init.o)
 
 .debug_line_str
-                0x00000000       0x5f
+                0x00000000       0x5b
  .debug_line_str
-                0x00000000       0x5f ./Startup/startup_stm32f411vetx.o
+                0x00000000       0x5b ./Startup/startup_stm32f411vetx.o
