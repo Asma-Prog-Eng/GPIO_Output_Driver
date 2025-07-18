@@ -10,7 +10,7 @@
 
 #define RCC_PLLCFGR_PLLQEN    (1U << 26)
 
-#define RCC_PLLCFGR_PLLMEN    (1U << 3)
+#define RCC_PLLCFGR_PLLMEN    (1U << 2)
 
 #define RCC_PLLCFGR_PLLN_1EN    (1U << 6)
 
@@ -25,7 +25,7 @@ void GPIOA_Init(void) {
 
 	// Configure PLL as clock source
 
-	// Enable HSI ( = 16 MHZ) as PLL clock source
+	// Enable HSI ( internal RC oscillator, 8 MHZ) as PLL clock source
 
 	 RCC->CR |= RCC_CR_HSIONEN;
 
