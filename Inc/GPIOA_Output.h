@@ -11,7 +11,7 @@
 
 void GPIOA_Init(void);
 
-void Led_toggle(void);
+void LED_toggle(void);
 
 
 

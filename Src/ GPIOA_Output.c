@@ -1,5 +1,5 @@
 
-#include < GPIOA_Output.h>
+#include "GPIOA_Output.h"
 #include "stm32f4xx.h"
 
 #define RCC_GPIOAEN         (1U << 0)
@@ -68,7 +68,7 @@ void GPIOA_Init(void) {
 }
 
 
-void Led_toggle(void) {
+void LED_toggle(void) {
 
 	// set PA5 high
 

@@ -594,9 +594,9 @@ LOAD C:/ST/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
  .text.GPIOA_Init
                 0x080001d8       0x90 ./Src/ GPIOA_Output.o
                 0x080001d8                GPIOA_Init
- .text.Led_toggle
+ .text.LED_toggle
                 0x08000268       0x5c ./Src/ GPIOA_Output.o
-                0x08000268                Led_toggle
+                0x08000268                LED_toggle
  .text.main     0x080002c4        0xe ./Src/main.o
                 0x080002c4                main
  *fill*         0x080002d2        0x2 
@@ -860,10 +860,10 @@ LOAD C:/ST/STM32CubeIDE_1.19.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.ext
  .debug_macro   0x0000dc45       0x6d ./Src/ GPIOA_Output.o
  .debug_macro   0x0000dcb2       0xd8 ./Src/main.o
 
-.debug_line     0x00000000      0xb2a
- .debug_line    0x00000000      0x59d ./Src/ GPIOA_Output.o
- .debug_line    0x0000059d      0x512 ./Src/main.o
- .debug_line    0x00000aaf       0x7b ./Startup/startup_stm32f411vetx.o
+.debug_line     0x00000000      0xb28
+ .debug_line    0x00000000      0x59c ./Src/ GPIOA_Output.o
+ .debug_line    0x0000059c      0x511 ./Src/main.o
+ .debug_line    0x00000aad       0x7b ./Startup/startup_stm32f411vetx.o
 
 .debug_str      0x00000000    0x4fef8
  .debug_str     0x00000000    0x4fef8 ./Src/ GPIOA_Output.o
