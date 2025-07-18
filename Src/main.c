@@ -1,6 +1,6 @@
 /**
  ******************************************************************************
-Toggle Led connected to PA5 while configuring clock frequency to 100 Mhz
+Toggle Led connected to PA5 while configuring clock frequency to 50 Mhz
 using PLL as input source clock
  ******************************************************************************
  */
