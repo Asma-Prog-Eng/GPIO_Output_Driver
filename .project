@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>GPIOA_Led_Toggle</name>
+	<name>GPIO_Output_Driver</name>
 	<comment></comment>
 	<projects>
 	</projects>

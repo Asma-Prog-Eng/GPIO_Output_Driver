@@ -33,34 +33,34 @@ $(wildcard ../makefile.init) \
 $(wildcard ../makefile.targets) \
 
 
-BUILD_ARTIFACT_NAME := GPIOA_Led_Toggle
+BUILD_ARTIFACT_NAME := GPIO_Output_driver
 BUILD_ARTIFACT_EXTENSION := elf
 BUILD_ARTIFACT_PREFIX :=
 BUILD_ARTIFACT := $(BUILD_ARTIFACT_PREFIX)$(BUILD_ARTIFACT_NAME)$(if $(BUILD_ARTIFACT_EXTENSION),.$(BUILD_ARTIFACT_EXTENSION),)
 
 # Add inputs and outputs from these tool invocations to the build variables 
 EXECUTABLES += \
-GPIOA_Led_Toggle.elf \
+GPIO_Output_driver.elf \
 
 MAP_FILES += \
-GPIOA_Led_Toggle.map \
+GPIO_Output_driver.map \
 
 SIZE_OUTPUT += \
 default.size.stdout \
 
 OBJDUMP_LIST += \
-GPIOA_Led_Toggle.list \
+GPIO_Output_driver.list \
 
 
 # All Target
 all: main-build
 
 # Main-build Target
-main-build: GPIOA_Led_Toggle.elf secondary-outputs
+main-build: GPIO_Output_driver.elf secondary-outputs
 
 # Tool invocations
-GPIOA_Led_Toggle.elf GPIOA_Led_Toggle.map: $(OBJS) $(USER_OBJS) C:\Users\asmae\OneDrive\Bureau\STM32_Training_Discovery\GPIOA_Led_Toggle\STM32F411VETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "GPIOA_Led_Toggle.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\asmae\OneDrive\Bureau\STM32_Training_Discovery\GPIOA_Led_Toggle\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="GPIOA_Led_Toggle.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+GPIO_Output_driver.elf GPIO_Output_driver.map: $(OBJS) $(USER_OBJS) C:\Users\asmae\OneDrive\Bureau\STM32_Training_Discovery\GPIO_Output_driver\STM32F411VETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "GPIO_Output_driver.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\asmae\OneDrive\Bureau\STM32_Training_Discovery\GPIO_Output_driver\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="GPIO_Output_driver.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
@@ -69,14 +69,14 @@ default.size.stdout: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
 	@echo 'Finished building: $@'
 	@echo ' '
 
-GPIOA_Led_Toggle.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "GPIOA_Led_Toggle.list"
+GPIO_Output_driver.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "GPIO_Output_driver.list"
 	@echo 'Finished building: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) GPIOA_Led_Toggle.elf GPIOA_Led_Toggle.list GPIOA_Led_Toggle.map default.size.stdout
+	-$(RM) GPIO_Output_driver.elf GPIO_Output_driver.list GPIO_Output_driver.map default.size.stdout
 	-@echo ' '
 
 secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST)

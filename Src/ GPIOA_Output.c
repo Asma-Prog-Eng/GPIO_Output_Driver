@@ -1,5 +1,5 @@
 
-#include <Init.h>
+#include < GPIOA_Output.h>
 #include "stm32f4xx.h"
 
 #define RCC_GPIOAEN         (1U << 0)
@@ -18,7 +18,7 @@
 
 #define RCC_PLLCFGR_PLLPEN      (1U << 0)
 
-void ADC_Init(void) {
+void GPIOA_Init(void) {
 
  /************************Configure ADC PIO pin*******************************************/
 
@@ -68,5 +68,22 @@ void ADC_Init(void) {
 }
 
 
+void Led_toggle(void) {
 
+	// set PA5 high
+
+	GPIOA->ODR |= (1U << 5) ;
+
+	// simple delay
+
+	for (volatile uint32_t i = 0; i < 500000; i++) {};
+
+	// set PA5 low
+
+	GPIOA->ODR &= ~(1U << 5) ;
+
+	// simple delay
+
+	for (volatile uint32_t i = 0; i < 500000; i++) {};
+}
 
