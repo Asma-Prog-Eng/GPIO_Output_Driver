@@ -23,11 +23,7 @@ Bare metal implementation  of an GPIO output driver , with PLL clock configurati
 2. Import project into STM32CubeIDE:
 File → Import... → Existing Projects into Workspace
 
-3. Add required include directories path : Project Properties--> C/C++ General --> Include --> Add --> System Files (CMSIS--> Device--> Include, and CMSIS-->Include)
-
-4. Add #STM32F4 smybol ( Project Properties--> C/C++ General --> Symbols --> Add)
-
-5.Rebuild project dependencies
+3. Rebuild project dependencies
 
 ## Usage
 - Initialization : GPIOA_Init() <br />
